@@ -14,7 +14,7 @@ class VDSSwipeAnimation: UIView {
     private var screenSize: CGSize!
     
     private let swipeImageView: UIImageView = {
-       let imageview = UIImageView()
+        let imageview = UIImageView()
         imageview.contentMode = .scaleAspectFit
         imageview.alpha = 0
         return imageview
@@ -64,7 +64,7 @@ class VDSSwipeAnimation: UIView {
         }
         
         swipeImageView.alpha = abs(xFromCenter) / (screenSize.width/2)
- 
+        
         if sender.state == .ended {
             
             if center.x < 75 {
@@ -80,6 +80,7 @@ class VDSSwipeAnimation: UIView {
             }
         }
     }
+    
     func reset() {
         if let centr = viewCenter {
             UIView.animate(withDuration: 0.3) {
@@ -88,7 +89,6 @@ class VDSSwipeAnimation: UIView {
                 self.swipeImageView.alpha = 0
                 self.center = centr
             }
-            
         }
     }
 }

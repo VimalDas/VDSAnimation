@@ -1,24 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="iit-Ea-NXd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Not-pZ-yql">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zec-qU-vqO" customClass="VDSSwipeAnimation" customModule="DemoAnimation" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="173" width="250" height="300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="xKq-uz-IWy">
+                                                <rect key="frame" x="8" y="48" width="234" height="244"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="244" id="QlF-uJ-MLZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate The Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dh-Rl-sjc">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="7bE-cb-Mdl"/>
+                                            <constraint firstItem="8dh-Rl-sjc" firstAttribute="leading" secondItem="zec-qU-vqO" secondAttribute="leading" id="DRW-OV-6VG"/>
+                                            <constraint firstAttribute="trailing" secondItem="xKq-uz-IWy" secondAttribute="trailing" constant="8" id="Q1z-yK-D7Z"/>
+                                            <constraint firstItem="xKq-uz-IWy" firstAttribute="leading" secondItem="zec-qU-vqO" secondAttribute="leading" constant="8" id="X9l-E6-ZHc"/>
+                                            <constraint firstAttribute="bottom" secondItem="xKq-uz-IWy" secondAttribute="bottom" constant="8" id="ipq-LW-8rs"/>
+                                            <constraint firstAttribute="trailing" secondItem="8dh-Rl-sjc" secondAttribute="trailing" id="jmH-sU-kta"/>
+                                            <constraint firstItem="xKq-uz-IWy" firstAttribute="top" secondItem="8dh-Rl-sjc" secondAttribute="bottom" id="sZI-ja-fEm"/>
+                                            <constraint firstAttribute="width" constant="250" id="slK-Zf-DUN"/>
+                                            <constraint firstItem="8dh-Rl-sjc" firstAttribute="top" secondItem="zec-qU-vqO" secondAttribute="top" id="uZU-yS-ITE"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLC-oP-5eh">
+                                        <rect key="frame" x="127.5" y="50" width="120" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZXH-rl-saS"/>
+                                            <constraint firstAttribute="width" constant="120" id="yDa-V7-u2U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzd-VE-pgr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PLC-oP-5eh" firstAttribute="centerX" secondItem="Not-pZ-yql" secondAttribute="centerX" id="TY3-Mi-Lhl"/>
+                                    <constraint firstItem="zec-qU-vqO" firstAttribute="centerY" secondItem="Not-pZ-yql" secondAttribute="centerY" id="W6H-dS-p27"/>
+                                    <constraint firstItem="PLC-oP-5eh" firstAttribute="top" secondItem="Not-pZ-yql" secondAttribute="top" constant="50" id="cD4-H1-oG6"/>
+                                    <constraint firstItem="zec-qU-vqO" firstAttribute="centerX" secondItem="Not-pZ-yql" secondAttribute="centerX" id="v5M-Z1-68s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iit-Ea-NXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8sk-pa-cx6"/>
+                            <constraint firstItem="Not-pZ-yql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FIs-su-bqq"/>
+                            <constraint firstItem="iit-Ea-NXd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NK9-P9-bxp"/>
+                            <constraint firstItem="iit-Ea-NXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aAn-Zw-4oA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iit-Ea-NXd" secondAttribute="bottom" id="dpT-ya-zHV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Not-pZ-yql" secondAttribute="bottom" id="ivh-qn-KTK"/>
+                            <constraint firstItem="Not-pZ-yql" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mMR-FP-8yI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Not-pZ-yql" secondAttribute="trailing" id="ttr-10-tEl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="zec-qU-vqO" id="CaI-5t-qHZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2" width="640" height="640"/>
+        <image name="5" width="640" height="457"/>
+    </resources>
 </document>

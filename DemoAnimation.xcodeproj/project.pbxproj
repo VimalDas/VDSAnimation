@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94296CBC1FC0149000A9CF2F /* VDSSwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94296CBB1FC0149000A9CF2F /* VDSSwipeAnimation.swift */; };
 		944EA9DC1FBF57BF00695777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EA9DB1FBF57BF00695777 /* AppDelegate.swift */; };
 		944EA9DE1FBF57BF00695777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EA9DD1FBF57BF00695777 /* ViewController.swift */; };
 		944EA9E11FBF57BF00695777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944EA9DF1FBF57BF00695777 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94296CBB1FC0149000A9CF2F /* VDSSwipeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDSSwipeAnimation.swift; sourceTree = "<group>"; };
 		944EA9D81FBF57BF00695777 /* DemoAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944EA9DB1FBF57BF00695777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944EA9DD1FBF57BF00695777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				944EA9DB1FBF57BF00695777 /* AppDelegate.swift */,
 				944EA9DD1FBF57BF00695777 /* ViewController.swift */,
+				94296CBB1FC0149000A9CF2F /* VDSSwipeAnimation.swift */,
 				944EA9DF1FBF57BF00695777 /* Main.storyboard */,
 				944EA9E21FBF57BF00695777 /* Assets.xcassets */,
 				944EA9E41FBF57BF00695777 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				944EA9DE1FBF57BF00695777 /* ViewController.swift in Sources */,
 				944EA9DC1FBF57BF00695777 /* AppDelegate.swift in Sources */,
+				94296CBC1FC0149000A9CF2F /* VDSSwipeAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

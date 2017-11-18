@@ -77,6 +77,8 @@ class VDSSwipeAnimation: UIView {
                     self.center = CGPoint(x: self.center.x + 200, y: self.center.y + 75)
                     self.alpha = 0
                 }
+            } else {
+               reset()
             }
         }
     }

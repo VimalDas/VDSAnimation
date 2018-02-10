@@ -6,4 +6,4 @@ Just changing the class of UIView to VDSSwipeAnimation will give the view animat
 
 thats it. enjoy!!
 
-
+Youtube : https://youtu.be/TsUbpiANc9Y
